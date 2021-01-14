@@ -83,12 +83,12 @@ Travel {
 
 
 
-//Day 7 Part 2 of closures
+///Day 7 Part 2 of closures
 
-//The least you need to know
+///The least you need to know
 
 
-//Video 1
+///Video 1
 //Using closures as parameters when they accept parameters
 
 //We’ve been using () -> Void to mean “accepts no parameters and returns nothing”, but you can go ahead and fill the () with the types of any parameters that your closure should accept.
@@ -108,7 +108,7 @@ travel { (place: String) in
 
 
 
-// Video 2
+/// Video 2
 //Using closures as parameters when they return values
 //We’ve been using () -> Void to mean “accepts no parameters and returns nothing”, but you can replace that Void with any type of data to force the closure to return a value.
 
@@ -126,7 +126,7 @@ travel { (place: String) -> String in
 
 
 
-//Video 3
+///Video 3
 //Shorthand parameter names
 
 
@@ -150,7 +150,7 @@ travel {
 
 
 
-//Video 4
+///Video 4
 //Closures with multiple parameters
 //This time our travel() function will require a closure that specifies where someone is traveling to, and the speed they are going. This means we need to use (String, Int) -> String for the parameter’s type.
 
@@ -170,7 +170,7 @@ travel {
 
 
 
-//Video 5
+///Video 5
 //Returning closures from functions
 //In the same way that you can pass a closure to a function, you can get closures returned from a function too.
 //The syntax for this is a bit confusing a first, because it uses -> twice: once to specify your function’s return value, and a second time to specify your closure’s return value.
@@ -190,7 +190,7 @@ let result2 = travel()("London") //This make swiftUI unhappy so use the way up t
 
 
 
-//Video 6
+///Video 6
 //Capturing values
 //If you use any external values inside your closure, Swift captures them – stores them alongside the closure, so they can be modified even if they don’t exist any more.
 
@@ -212,5 +212,17 @@ result("London")
 
 
 
-//Video 7
-//
+
+/// Over View of Closures.
+
+//1. You can assign closures to variables, then call them later on.
+
+//2. Closures can accept parameters and return values, like regular functions.
+
+//3. You can pass closures into functions as parameters, and those closures can have parameters of their own and a return value.
+
+//4. If the last parameter to your function is a closure, you can use trailing closure syntax.
+
+//5. Swift automatically provides shorthand parameter names like $0 and $1, but not everyone uses them.
+
+//6. If you use external values inside your closures, they will be captured so the closure can refer to them later.
