@@ -28,6 +28,7 @@
 		CB7FCFC125ADF5480067DB88 /* FilePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilePlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CB7FCFC325AF3D9D0067DB88 /* Closures Playground..playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Closures Playground..playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CB7FCFC625AF3DE30067DB88 /* Functions Playgorund.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Functions Playgorund.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CBAE831525B6158A003EC9F9 /* Structures Playground..playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Structures Playground..playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		CB7FCFAD25ADF4F40067DB88 = {
 			isa = PBXGroup;
 			children = (
+				CBAE831525B6158A003EC9F9 /* Structures Playground..playground */,
 				CB7FCFB825ADF4F40067DB88 /* Notes */,
 				CB7FCFB725ADF4F40067DB88 /* Products */,
 			);
