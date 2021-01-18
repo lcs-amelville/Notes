@@ -79,6 +79,43 @@ london.collectTaxes()
 
 
 
-/// Video 5
+/// Video 5   Mutating methods
+//If a struct has a variable property but the instance of the struct was created as a constant, that property can’t be changed – the struct is constant, so all its properties are also constant regardless of how they were created.
+
+//The problem is that when you create the struct Swift has no idea whether you will use it with constants or variables, so by default it takes the safe approach: Swift won’t let you write methods that change properties unless you specifically request it.
+
+//When you want to change a property inside a method, you need to mark it using the mutating keyword, like this
+
+struct Person {
+    var name: String
+
+    mutating func makeAnonymous() {
+        name = "Anonymous"
+    }
+}
+
+//Because it changes the property, Swift will only allow that method to be called on Person instances that are variables
+var person = Person(name: "Ed")
+person.makeAnonymous()
 
 
+
+/// Video 6 Properties and methods of strings
+//We’ve used lots of strings so far, and it turns out they are structs – they have their own methods and properties we can use to query and manipulate the string
+
+let string = "Do or do not, there is no try."
+//You can read the number of characters in a string using its count property:
+print(string.count)
+
+//They have a hasPrefix() method that returns true if the string starts with specific letters:
+print(string.hasPrefix("Do"))
+
+//You can uppercase a string by calling its uppercased() method:
+print(string.uppercased())
+
+//And you can even have Swift sort the letters of the string into an array:
+print(string.sorted())
+
+
+
+/// Video 7
