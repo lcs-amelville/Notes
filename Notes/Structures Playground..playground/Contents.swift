@@ -184,5 +184,73 @@ struct PErson {
 
 
 
-/// Video 3
-//
+/// Video 3 Lazy properties
+//Swift lets you create some properties only when they are needed. As an example, consider this FamilyTree struct – it doesn’t do much, but in theory creating a family tree for someone takes a long time:
+
+struct FamilyTree {
+    init() {
+        print("Creating family tree!")
+    }
+}
+
+//We might use that FamilyTree struct as a property inside a Person struct, like this
+struct PERson {
+    var name: String
+    lazy var familyTree = FamilyTree()
+
+    init(name: String) {
+        self.name = name
+    }
+}
+
+var ed = Person(name: "Ed")
+
+//But what if we didn’t always need the family tree for a particular person? If we add the lazy keyword to the familyTree property, then Swift will only create the FamilyTree struct when it’s first accessed
+
+//So, if you want to see the “Creating family tree!” message, you need to access the property at least once
+
+
+
+/// Video 4 Static properties and methods
+// All the properties and methods we’ve created so far have belonged to individual instances of structs, which means that if we had a Student struct we could create several student instances each with their own properties and methods
+
+struct Student {
+    var name: String
+    static var classSize = 0
+    init(name: String) {
+        self.name = name
+        Student.classSize += 1
+    }
+}
+
+let Ed = Student(name: "Ed")
+let taylor = Student(name: "Taylor")
+
+//Because the classSize property belongs to the struct itself rather than instances of the struct, we need to read it using Student.classSize
+
+print(Student.classSize)
+
+
+
+/// Video 5 Access control
+//Access control lets you restrict which code can use properties and methods. This is important because you might want to stop people reading a property directly, for example
+
+// This is a privite ID
+
+struct PERSon {
+    private var id: String
+
+    init(id: String) {
+        self.id = id
+    }
+
+    func identify() -> String {
+        return "My social security number is \(id)"
+    }
+}
+
+let eddie = PERSon(id: "12345")
+
+
+
+///Video 6 Structue conclusion.
