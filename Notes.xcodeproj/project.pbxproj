@@ -25,10 +25,10 @@
 /* Begin PBXFileReference section */
 		CB7FCFB625ADF4F40067DB88 /* Notes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Notes; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7FCFB925ADF4F40067DB88 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		CB7FCFC125ADF5480067DB88 /* FilePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilePlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CB7FCFC325AF3D9D0067DB88 /* Closures Playground..playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Closures Playground..playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CB7FCFC625AF3DE30067DB88 /* Functions Playgorund.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Functions Playgorund.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CBAE831525B6158A003EC9F9 /* Structures Playground..playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Structures Playground..playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CBAE831725B72528003EC9F9 /* Structures and Classes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Structures and Classes.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,6 @@
 		CB7FCFAD25ADF4F40067DB88 = {
 			isa = PBXGroup;
 			children = (
-				CBAE831525B6158A003EC9F9 /* Structures Playground..playground */,
 				CB7FCFB825ADF4F40067DB88 /* Notes */,
 				CB7FCFB725ADF4F40067DB88 /* Products */,
 			);
@@ -63,9 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				CB7FCFB925ADF4F40067DB88 /* main.swift */,
-				CB7FCFC125ADF5480067DB88 /* FilePlayground.playground */,
-				CB7FCFC325AF3D9D0067DB88 /* Closures Playground..playground */,
 				CB7FCFC625AF3DE30067DB88 /* Functions Playgorund.playground */,
+				CB7FCFC325AF3D9D0067DB88 /* Closures Playground..playground */,
+				CBAE831525B6158A003EC9F9 /* Structures Playground..playground */,
+				CBAE831725B72528003EC9F9 /* Structures and Classes.playground */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
