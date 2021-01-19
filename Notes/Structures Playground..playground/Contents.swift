@@ -140,3 +140,49 @@ print(toys.sorted())
 toys.remove(at: 0)
 
 //Arrays have lots more properties and methods – try typing toys. to bring up Xcode’s code completion options.
+
+
+
+
+
+/// Day 9
+
+/// Video 1 Initializers
+//Initializers are special methods that provide different ways to create your struct. All structs come with one by default, called their memberwise initializer – this asks you to provide a value for each property when you create the struct
+
+struct User {
+    var username: String
+    
+    //We can provide our own initializer to replace the default one. For example, we might want to create all new users as “Anonymous” and print a message, like this
+    init() {
+            username = "Anonymous"
+            print("Creating a new user!")
+        }
+}
+
+//You don’t write func before initializers, but you do need to make sure all properties have a value before the initializer ends.
+//Now our initializer accepts no parameters, we need to create the struct like this
+
+var user = User()
+user.username = "twostraws"
+
+
+
+/// Video 2
+//Referring to the current instance
+//Inside methods you get a special constant called self, which points to whatever instance of the struct is currently being used
+//For example, if you create a Person struct with a name property, then tried to write an initializer that accepted a name parameter, self helps you distinguish between the property and the parameter
+
+struct PErson {
+    var name: String
+
+    init(name: String) {
+        print("\(name) was born!")
+        self.name = name
+    }
+}
+
+
+
+/// Video 3
+//
