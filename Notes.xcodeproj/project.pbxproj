@@ -29,6 +29,7 @@
 		CB7FCFC625AF3DE30067DB88 /* Functions Playgorund.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Functions Playgorund.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CBAE831525B6158A003EC9F9 /* Structures Playground..playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Structures Playground..playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CBAE831725B72528003EC9F9 /* Structures and Classes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Structures and Classes.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CBD5E16B25B9E700004C8D29 /* Day 12 Review (Functions, Optionals, Enimerations, Structures and Classes).playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Day 12 Review (Functions, Optionals, Enimerations, Structures and Classes).playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				CB7FCFC325AF3D9D0067DB88 /* Closures Playground..playground */,
 				CBAE831525B6158A003EC9F9 /* Structures Playground..playground */,
 				CBAE831725B72528003EC9F9 /* Structures and Classes.playground */,
+				CBD5E16B25B9E700004C8D29 /* Day 12 Review (Functions, Optionals, Enimerations, Structures and Classes).playground */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
